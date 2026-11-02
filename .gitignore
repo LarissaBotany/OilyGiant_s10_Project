@@ -1,0 +1,22 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Variáveis de ambiente e segredos
+.env
+
+# Dados
+data/
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+# Rascunhos
+DRAFT_*.ipynb
