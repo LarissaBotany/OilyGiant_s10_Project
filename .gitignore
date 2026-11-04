@@ -20,3 +20,5 @@ __pycache__/
 .vscode/
 # Rascunhos
 DRAFT_*.ipynb
+.txt
+.md
