@@ -1,40 +1,37 @@
-# OilyGiant: Melhor região para novos poços de petróleo
+# Qual a melhor região para novos poços de petróleo?
 
-Projeto da Sprint 10 (Aprendizado de Máquina) do curso de Ciência de Dados.
 
 ## Contexto
-
-A OilyGiant é uma empresa de mineração de petróleo. O objetivo deste projeto é **identificar a região com maior margem de lucro** para o desenvolvimento de novos poços, usando um modelo de regressão para prever o volume de reservas e a técnica de **Bootstrapping** para avaliar lucro potencial e risco.
+Nesse projeto, atuarei como uma cientista de dados de uma empresa de mineração OilyGiant. Minha tarefa é  **identificar a região com maior margem de lucro** para o desenvolvimento de novos poços de petróleo, usando um modelo de regressão para prever o volume de reservas e a técnica de **Bootstrapping** para avaliar lucro potencial e risco.
 
 ## Objetivos
-
-1. Carregar e explorar os dados de poços de três regiões.
-2. Construir um modelo que preveja o volume de reservas de novos poços.
-3. Selecionar os poços com maiores valores previstos.
-4. Calcular o lucro de cada região e escolher a mais vantajosa.
-5. Avaliar lucro médio, intervalo de confiança e risco de prejuízo com Bootstrapping.
+Para realizar essa tarefa vou executar os seguintes etapas:
+1. Ler os arquivos com parâmetros coletados de poços de petróleo na região selecionada: a quantidade de petróleo e o volume de reservas;
+2. Construir um modelo para predizer o volume de reservas em novos poços;
+3. Escolher os poços de petróleo que têm os maiores valores estimados;
+4. Escolher a região com o maior lucro total para os poços de petróleo selecionados.
 
 ## Dados
+Tenho em mãos dados sobre amostras de petróleo de três regiões com parâmetros de cada poço de petróleo na região já são conhecidos.
 
-Três conjuntos de dados, um por região, com amostras de poços de petróleo:
+Os dados são sintéticos e não incluem nenhum detalhe de contratos ou características de poços.
 
+### Descrição de dados
 | Coluna | Descrição |
 |---|---|
 | `id` | Identificador único do poço |
 | `f0`, `f1`, `f2` | Características (features) do poço |
 | `product` | Volume de reservas (mil barris), variável-alvo |
 
-> Os arquivos de dados **não** estão versionados neste repositório (veja `.gitignore`). Coloque-os em `data/` antes de rodar.
 
 ## Condições de negócio
 
-> Confira os valores exatos no enunciado do projeto e ajuste aqui.
-
-- Orçamento para o desenvolvimento: _X_ milhões de dólares
-- Número de poços a selecionar: _X_ (entre _Y_ poços explorados por região)
-- Receita por unidade de reservas: _X_ dólares
-- Risco máximo aceitável de prejuízo: _X_%
-- Bootstrapping: _X_ amostras
+Há algumas condições, que preciso considerar, para encontrar os melhores lugares:
+- Apenas regressão linear deve ser usada para o treinamento do modelo.
+- Ao explorar a região, um estudo de 500 pontos é realizado e os melhores 200 pontos são selecionados para calcular o lucro.
+- O orçamento para o desenvolvimento de 200 poços de petróleo é 100 milhões de dólares.
+- Um barril de petróleo bruto traz 4.5 dólares de receita. A receita de uma unidade de produto é 4.500 dólares (o volume de reservas está em milhares de barris).
+- Depois de ter avaliado os riscos, mantenha apenas as regiões com o risco de perdas inferior a 2.5%. Entre aquelas que se enquadram no critério, você precisa selecionar a região com o lucro médio mais alto.
 
 ## Metodologia
 
@@ -94,3 +91,6 @@ OilyGiant_s10_Project/
 Python, pandas, NumPy, scikit-learn, matplotlib/seaborn, Jupyter.
 
 ## Autora
+Larissa Areal de Carvalho Muller
+
+Esse projeto faz parte dos projetos desenvolvidos durante bootcamp de Ciência de Dados.
