@@ -37,7 +37,7 @@ Há algumas condições, que preciso considerar, para encontrar os melhores luga
 
 1. **Preparação dos dados:** verificação de nulos, duplicados e tipos.
 2. **Divisão dos dados:** treino e validação (75% / 25%) para cada região.
-3. **Modelo:** Regressão Linear, avaliada por RMSE e volume médio previsto.
+3. **Modelo:** Regressão Linear, avaliada por Raiz do Erro Quadrático Médio (REQM /RMSE) e volume médio previsto.
 4. **Cálculo de lucro:** seleção dos melhores poços pelas previsões e cálculo do lucro com os volumes reais.
 5. **Bootstrapping:** estimativa de lucro médio, intervalo de confiança de 95% e probabilidade de prejuízo por região.
 
