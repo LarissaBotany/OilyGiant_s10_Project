@@ -90,7 +90,7 @@ jupyter notebook
 
 ```
 OilyGiant_s10_Project/
-├── dataset/            # arquivos de dados (não versionados)
+├── dataset/            # arquivos de dados 
 ├── .gitignore
 └── README.md
 ```
