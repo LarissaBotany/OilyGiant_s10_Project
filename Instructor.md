@@ -37,17 +37,17 @@ Os dados são sintéticos e não incluem nenhum detalhe de contratos ou caracter
     2.2 Treine o modelo e faça predições para o conjunto de validação.
     2.3 Salve as predições e respostas corretas no conjunto de validação.
     2.4 Imprima o volume médio previsto de reservas e o REQM do modelo.
-Analise os resultados.
-Coloque todos os passos anteriores em funções, execute os passos 2.1 a 2.5 nos arquivos 'geo_data_1.csv' e 'geo_data_2.csv'.
-Prepare-se para o cálculo de lucro:
-Armazene todos os valores necessários para os cálculos em variáveis separadas.
-Dado o investimento de 100 milhões para 200 poços de petróleo, cada um precisa produzir, em média, uma quantidade de unidades equivalente a pelo menos 500 mil dólares para evitar prejuízos (isso é aproximadamente 111,1 unidades). Compare essa quantidade com o volume médio de cada região.
-Forneça conclusões sobre a etapa de preparação para o cálculo de lucro.
-Escreva uma função para calcular lucro de um conjunto de poços de petróleo selecionados e predições do modelo:
-Escolha os 200 poços com os valores mais altos previstos de cada uma das 3 regiões (ou seja, arquivos 'csv').
-Sumarize o volume alvo de reservas de acordo com essas predições. Armazene as predições para os 200 poços para cada uma das 3 regiões.
-Calcule o lucro potencial dos 200 melhores poços por região. Apresente suas conclusões: sugira uma região para o desenvolvimento de poços de petróleo e justifique sua escolha.
-Calcule riscos e lucro para cada região:
+    2.5 Analise os resultados.
+    2.6 Coloque todos os passos anteriores em funções, execute os passos 2.1 a 2.5 nos arquivos 'geo_data_1.csv' e 'geo_data_2.csv'.
+3. Prepare-se para o cálculo de lucro:
+    3.1 Armazene todos os valores necessários para os cálculos em variáveis separadas.
+    3. 2 Dado o investimento de 100 milhões para 200 poços de petróleo, cada um precisa produzir, em média, uma quantidade de unidades equivalente a pelo menos 500 mil dólares para evitar prejuízos (isso é aproximadamente 111,1 unidades). Compare essa quantidade com o volume médio de cada região.
+    3.3 Forneça conclusões sobre a etapa de preparação para o cálculo de lucro.
+4. Escreva uma função para calcular lucro de um conjunto de poços de petróleo selecionados e predições do modelo:
+    4.1 Escolha os 200 poços com os valores mais altos previstos de cada uma das 3 regiões (ou seja, arquivos 'csv').
+    4.2 Sumarize o volume alvo de reservas de acordo com essas predições. Armazene as predições para os 200 poços para cada uma das 3 regiões.
+    4.3 Calcule o lucro potencial dos 200 melhores poços por região. Apresente suas conclusões: sugira uma região para o desenvolvimento de poços de petróleo e justifique sua escolha.
+5. Calcule riscos e lucro para cada região:
 Usando as predições que você armazenou na etapa 4.2, use a técnica de bootstrapping com 1.000 amostras para encontrar a distribuição de lucros.
 Encontre lucro médio, intervalo de confiança de 95% e o risco de prejuízo. Prejuízo é um lucro negativo, calcule-o como uma probabilidade e depois o expresse como uma porcentagem.
 Apresente suas conclusões: sugira uma região para o desenvolvimento de poços de petróleo e justifique sua escolha. A sua escolha corresponde à escolha anterior na etapa 4.3?
